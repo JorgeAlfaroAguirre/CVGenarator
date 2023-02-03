@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+}
+
+.main {
+  display: grid;
+}
+
+.main__background {
+  height: 100vh;
+  background-image: url("../img/wallpapers/ian-dooley-DJ7bWa-Gwks-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: darken;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.main__content_glass {
+  width: 50em;
+  height: 25em;
+}
+
+.glass {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12.5px);
+  border: 1px solid rgba(255, 255, 255, 0.36);
+}
+
+.title__main {
+  display: flex;
+  padding: 1em 2.5em;
+  text-align: center;
+  font-size: 3.5em;
+  word-spacing: 0.1em;
+  font-size: 900;
+  flex-wrap: wrap;
+}
+
+.main__sesions {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20em;
+  height: 5em;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 0 0 0.8em 0.8em;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12.5px);
+  border: 1px solid rgba(255, 255, 255, 0.36);
+  border-top: 0px;
+}
+
+.main__login,
+.main__register {
+  padding: 1em;
+}
+
+.btn {
+  width: 2em;
+  padding: 0.8em 1.2em;
+  color: white;
+  text-decoration: none;
+  border-radius: 0.4em;
+  box-shadow: 10px 10px 8px -9px rgba(0, 0, 0, 0.69);
+  font-size: 1em;
+}
+
+.login__login {
+  background-color: #02b00b;
+}
+
+.register__register {
+  background-color: #1d2cb4;
+}
+
+.login__login:hover {
+  background-color: #02cf0d;
+}
+
+.register__register:hover {
+  background-color: #3448fd;
+}
