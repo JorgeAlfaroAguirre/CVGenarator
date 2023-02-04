@@ -104,7 +104,7 @@ body {
   background-color: #3448fd;
 }
 
-/************** MODAL ***************/
+/************** MODAL LOGIN ***************/
 
 .modal__login {
   display: none;
@@ -141,26 +141,48 @@ body {
   padding: 1em;
 }
 
+.body__modal__login {
+  padding: 0 2em 1.2em;
+}
+
+.body__modal__login {
+  outline: none;
+  border: 0.1em solid #0485fdaf;
+}
+
 .login__title {
   font-size: 2em;
   font-weight: 900;
-  color: #727272;
+  color: #1804c4;
 }
 
 .input {
   font-size: 0.9em;
   display: block;
   width: 100%;
-  margin: 2em 0;
+  margin: 2em 0 1em;
   padding: 0.8em 1em;
+  outline: none;
   border: 0.1em solid #727272;
-  border-radius: 0.1em;
+  border-radius: 0.3em;
+}
+
+.input:focus {
+  border: 0.1em solid #0485fdaf;
+  color: #727272;
+  outline: none;
+}
+
+.msg__login_error {
+  display: none;
+  font-size: 0.9em;
+  color: #d10606;
 }
 
 .btn__login__modal {
   display: flex;
   gap: 1em;
-  margin-top: 2em;
+  margin-top: 1em;
 }
 
 .btn_sesion {

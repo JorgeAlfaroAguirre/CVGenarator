@@ -36,18 +36,22 @@
     <div class="modal__login">
       <div class="modal__content">
         <form action="" class="modal_login">
-          <fieldset>
+          <fieldset class="body__modal__login">
             <legend class="login__title">Inicio de sesión</legend>
             <input
               type="text"
+              id="input"
               class="input login__username"
               placeholder="Usuario"
             />
             <input
-              type="text"
+              type="password"
               class="input login__password"
               placeholder="Contraseña"
             />
+            <label class="msg__login_error">
+              !Todos los campos son obligatorios!
+            </label>
             <div class="btn__login__modal">
               <button type="button" class="btn_sesion btn__login">
                 Confirmar
