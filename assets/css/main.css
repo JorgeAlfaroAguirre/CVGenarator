@@ -85,6 +85,7 @@ body {
   border-radius: 0.4em;
   box-shadow: 10px 10px 8px -9px rgba(0, 0, 0, 0.69);
   font-size: 1em;
+  cursor: pointer;
 }
 
 .login__login {
@@ -102,6 +103,103 @@ body {
 .register__register:hover {
   background-color: #3448fd;
 }
+
+/************** MODAL ***************/
+
+.modal__login {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: white;
+  border: 1px solid gray;
+  width: 25em;
+  height: 20em;
+  margin: auto;
+  animation: animatetop 1s;
+  border-radius: 0.5em;
+}
+
+.modal__content {
+  padding: 0.5em 1em 1em;
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 1;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.modal_login {
+  padding: 1em;
+}
+
+.login__title {
+  font-size: 2em;
+  font-weight: 900;
+  color: #727272;
+}
+
+.input {
+  font-size: 0.9em;
+  display: block;
+  width: 100%;
+  margin: 2em 0;
+  padding: 0.8em 1em;
+  border: 0.1em solid #727272;
+  border-radius: 0.1em;
+}
+
+.btn__login__modal {
+  display: flex;
+  gap: 1em;
+  margin-top: 2em;
+}
+
+.btn_sesion {
+  padding: 0.8em 0.5em;
+  width: 100%;
+  color: white;
+  border: 0;
+  border-radius: 0.3em;
+}
+
+.btn__login {
+  background-color: #1b31f7;
+}
+
+.btn__login:hover {
+  background-color: #142194;
+}
+
+.btn__close_login {
+  background-color: #f72121;
+}
+
+.btn__close_login:hover {
+  background-color: #a70909;
+}
+
+@keyframes animatebottom {
+  from {
+    top: 0;
+    opacity: 1;
+  }
+
+  to {
+    top: -300px;
+    opacity: 0;
+  }
+}
+
+/**************** Media query ******************/
 
 @media (max-width: 768px) {
   .main__content_glass {

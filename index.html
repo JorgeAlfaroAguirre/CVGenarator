@@ -18,10 +18,12 @@
       <div class="main__background">
         <div class="main__sesions">
           <div class="main__btn main__login">
-            <a href="#" class="btn login__login">Iniciar sesion</a>
+            <a type="button" id="login__login" class="btn login__login">
+              Iniciar sesion
+            </a>
           </div>
           <div class="main__btn main__register">
-            <a href="#" class="btn register__register">Registrarse</a>
+            <a type="button" class="btn register__register">Registrarse</a>
           </div>
         </div>
         <div class="main__content_glass">
@@ -31,6 +33,34 @@
         </div>
       </div>
     </div>
+    <div class="modal__login">
+      <div class="modal__content">
+        <form action="" class="modal_login">
+          <fieldset>
+            <legend class="login__title">Inicio de sesión</legend>
+            <input
+              type="text"
+              class="input login__username"
+              placeholder="Usuario"
+            />
+            <input
+              type="text"
+              class="input login__password"
+              placeholder="Contraseña"
+            />
+            <div class="btn__login__modal">
+              <button type="button" class="btn_sesion btn__login">
+                Confirmar
+              </button>
+              <button type="button" class="btn_sesion btn__close_login">
+                Cerrar
+              </button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/modal.js"></script>
   </body>
 </html>
