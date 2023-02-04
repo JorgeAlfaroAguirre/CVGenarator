@@ -17,6 +17,7 @@ btn_close__login_modal.addEventListener("click", () => {
   });
   main__background.style.backgroundColor = "rgba(0, 0, 0, 0.3)";
   login_modal.style.display = "none";
+  msg_error_modal.style.display = "none";
 });
 
 btn_login_confirmar.addEventListener("click", () => {
