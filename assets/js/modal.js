@@ -16,6 +16,9 @@ const btn_register_confirmar = document.querySelector(
 const msg_error_modal = document.querySelector(".msg__login_error");
 const msg_error_modal_register = document.querySelector(".msg__register_error");
 
+const api = "http://localhost:3000/";
+
+/************************************************************************* */
 const clearInput = (inputs) => {
   inputs.forEach((input) => {
     input.value = "";
@@ -24,6 +27,7 @@ const clearInput = (inputs) => {
 
 /********** LOGIN **************/
 
+//  Abrir Modal
 btn_login_modal.addEventListener("click", () => {
   main__background.style.backgroundColor = "rgba(0, 0, 0, 0.8)";
   login_modal.style.display = "block";
@@ -32,10 +36,8 @@ btn_login_modal.addEventListener("click", () => {
   msg_error_modal.style.display = "none";
 });
 
+// Cerrar Modal
 btn_close__login_modal.addEventListener("click", () => {
-  /* inputs.forEach((input) => {
-    input.value = "";
-  }); */
   clearInput(inputs);
   clearInput(inputs__register);
   main__background.style.backgroundColor = "rgba(0, 0, 0, 0.3)";
@@ -44,13 +46,29 @@ btn_close__login_modal.addEventListener("click", () => {
   msg_error_modal.style.display = "none";
 });
 
+// Confirmar envio de datos
 btn_login_confirmar.addEventListener("click", () => {
   let allInputsFilled = Array.from(inputs).every((input) => input.value !== "");
-  console.log(allInputsFilled);
   if (!allInputsFilled) {
     msg_error_modal.style.display = "block";
   } else {
     msg_error_modal.style.display = "none";
+
+    //  Traer los datos del formulario
+    const formData = new FormData(document.getElementById("form_login"));
+    const data = Object.fromEntries(formData);
+    console.log(data);
+
+    fetch(`${api}login`, {
+      method: "POST",
+      body: JSON.stringify(data),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((response) => response.json())
+      .then((data) => console.log(data))
+      .catch((error) => console.error(error));
   }
 });
 
