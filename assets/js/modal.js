@@ -47,7 +47,7 @@ btn_close__login_modal.addEventListener("click", () => {
 });
 
 // Confirmar envio de datos
-btn_login_confirmar.addEventListener("click", () => {
+btn_login_confirmar.addEventListener("click", async () => {
   let allInputsFilled = Array.from(inputs).every((input) => input.value !== "");
   if (!allInputsFilled) {
     msg_error_modal.style.display = "block";
@@ -57,18 +57,17 @@ btn_login_confirmar.addEventListener("click", () => {
     //  Traer los datos del formulario
     const formData = new FormData(document.getElementById("form_login"));
     const data = Object.fromEntries(formData);
-    console.log(data);
 
-    fetch(`${api}login`, {
+    //Conectar con la api(url api, {metodo, body, header})
+    const res = await fetch(`${api}login`, {
       method: "POST",
       body: JSON.stringify(data),
       headers: {
         "Content-Type": "application/json",
       },
-    })
-      .then((response) => response.json())
-      .then((data) => console.log(data))
-      .catch((error) => console.error(error));
+    });
+    const dato = await res.json();
+    console.log(dato);
   }
 });
 

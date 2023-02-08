@@ -5,7 +5,7 @@ const router = Router();
 router.post("/login", (req, res) => {
   console.log(req.body);
   const parametros = req.params;
-  return res.send(parametros);
+  return res.send(req.body);
 });
 
 export default router;
