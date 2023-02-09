@@ -16,9 +16,10 @@ const btn_register_confirmar = document.querySelector(
 const msg_error_modal = document.querySelector(".msg__login_error");
 const msg_error_modal_register = document.querySelector(".msg__register_error");
 
-const api = "http://localhost:3000/";
+const api = "http://localhost:3000";
 
-/************************************************************************* */
+/***************************************************************************/
+
 const clearInput = (inputs) => {
   inputs.forEach((input) => {
     input.value = "";
@@ -49,6 +50,8 @@ btn_close__login_modal.addEventListener("click", () => {
 // Confirmar envio de datos
 btn_login_confirmar.addEventListener("click", async () => {
   let allInputsFilled = Array.from(inputs).every((input) => input.value !== "");
+
+  // Si es true, si el o los campos estan vacios muestra mensaje
   if (!allInputsFilled) {
     msg_error_modal.style.display = "block";
   } else {
@@ -58,14 +61,24 @@ btn_login_confirmar.addEventListener("click", async () => {
     const formData = new FormData(document.getElementById("form_login"));
     const data = Object.fromEntries(formData);
 
-    //Conectar con la api(url api, {metodo, body, header})
-    const res = await fetch(`${api}login`, {
+    /* Conectar con la api(url api, {
+      metodo, 
+      body, 
+      header:{
+        "Content-type":"application/json"
+      }
+    })
+      resultado de la conexion se almacena en res
+    */
+
+    const res = await fetch(`${api}/login`, {
       method: "POST",
       body: JSON.stringify(data),
       headers: {
         "Content-Type": "application/json",
       },
     });
+    //////////////////////////////////////
     const dato = await res.json();
     console.log(dato);
   }

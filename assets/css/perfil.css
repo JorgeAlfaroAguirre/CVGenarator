@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700;900&family=Poppins:wght@400;700;900&display=swap');
+
+*{
+  margin:0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'League Spartan', sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
+  overflow: hidden;
+}
+
+.main{
+  overflow: hidden;
+  height: 100vh;
+  display: grid;
+  margin: 0 auto;
+}
+
+.main__background{
+  height: 100vh;
+  background-color: #e0e0e0;
+}
+
+.nav{
+  background-color: black;
+  color: #eeeeee;
+  height: 10vh;
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
+  grid-template-areas: 
+  "nav_text nav_text nav_text nav_text nav_text nav_text nav_img"
+  ;
+  gap: 1em;
+}
+
+.nav_text{
+  width: 100%;
+  font-size: 1.5em;
+  grid-area: nav_text;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2em;
+}
+
+.link_nav{
+  width: 100%;
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav_image{
+  position: absolute;
+  top:0;
+  right: 0;
+  background: #fff;
+  width: 10em;
+  border-radius: 50%;
+  border:1px solid #ccc
+}
+
+.img_perfil{
+  width:10em;
+}
+
+/* .nav_container_sesion{
+  position:absolute;
+  text-align: center;
+  top:8em;
+  right: .9em;
+  width: 8.1em;
+  padding: 1.2em 1.2em;
+  background-color: #c60000;
+  border-radius: 0 0 25% 25%;
+} */
+
+/* .nav_container_sesion:hover{
+  background-color: #fc0000;
+} */
+
+.close{
+  position:absolute;
+  text-align: center;
+  top:10em;
+  right: .9em;
+  width: 10.5em;
+  padding: .8em 1.2em 1.2em;
+  background-color: #c60000;
+  border-radius: 0 0 100% 100%;
+  font-size: .8em;
+  text-decoration: none;
+  color: #fff;
+}
+
+.close:hover{
+  background-color: #fc0000;
+}

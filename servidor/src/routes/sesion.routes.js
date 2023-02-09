@@ -4,7 +4,6 @@ const router = Router();
 
 router.post("/login", (req, res) => {
   console.log(req.body);
-  const parametros = req.params;
   return res.send(req.body);
 });
 
