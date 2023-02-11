@@ -5,11 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/perfil.css" />
+
     <title>CV Generator</title>
   </head>
   <body>
     <div class="main">
       <nav class="nav">
+        <div class="toggle-container">
+          <div class="toggle-burger"></div>
+          <div class="toggle-burger"></div>
+          <div class="toggle-burger"></div>
+        </div>
         <div class="nav_text">
           <div class="nav_perfil">
             <a href="#" class="link_nav">Generador curriculum</a>
@@ -38,40 +44,51 @@
             <div class="form_account">
               <form action="" class="form_information_account">
                 <div class="group_input">
-                  <lable for="username" class="label_account"
-                    >Nombre usuario</lable
+                  <label for="username" class="label_account"
+                    >Correo usuario</label
                   >
-                  <input
+                  <label
                     id="username"
-                    type="text"
-                    class="input_acount"
+                    class="label_account_txt"
                     name="username"
-                    placeholder="jperez"
-                  />
+                    placeholder=""
+                  >
+                    xxxxxx@xxxxx.com
+                  </label>
                 </div>
                 <div class="group_input">
-                  <lable for="name_completed" class="label_account"
-                    >Nombre completo</lable
+                  <label for="name_completed" class="label_account"
+                    >Contraseña</label
                   >
                   <input
                     id="name_completed"
-                    type="text"
-                    class="input_acount"
+                    type="password"
+                    class="input_account"
                     name="name_completed"
-                    placeholder="juan perez"
+                    placeholder="**********"
+                  />
+                </div>
+                <div class="group_input">
+                  <label for="name_completed" class="label_account"
+                    >Repetir contraseña</label
+                  >
+                  <input
+                    id="dni"
+                    type="password"
+                    class="input_account"
+                    name="dni"
+                    placeholder="**********"
                   />
                 </div>
               </form>
+              <div class="group_button">
+                <a href="#" class="btn_perfil_save">Guardar</a>
+              </div>
             </div>
           </div>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt,
-            placeat quibusdam saepe, vero animi necessitatibus tempore non nulla
-            eaque omnis quasi voluptate, unde qui alias temporibus beatae
-            distinctio cum illo.
-          </p>
         </div>
       </div>
     </div>
+    <script src="./assets/js/perfil.js"></script>
   </body>
 </html>
