@@ -292,6 +292,16 @@ body {
     transform: rotate(-45deg) translate(0.3em, -0.4em);
   }
 
+  .body_content {
+    width: 100%;
+    padding: 2em 0.8em;
+  }
+
+  .title_perfil {
+    font-size: 2em;
+    margin-bottom: 1.2em;
+  }
+
   .group_input {
     grid-template-areas:
       "label"
