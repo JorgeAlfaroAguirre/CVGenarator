@@ -63,3 +63,9 @@ btnSave.addEventListener("click", () => {
     console.log(data);
   }
 });
+
+document.querySelector(".close").addEventListener("click", () => {
+  setTimeout(() => {
+    window.location.replace("/index.html");
+  }, 500);
+});

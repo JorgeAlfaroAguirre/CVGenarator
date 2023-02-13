@@ -81,6 +81,9 @@ btn_login_confirmar.addEventListener("click", async () => {
     //////////////////////////////////////
     const dato = await res.json();
     console.log(dato);
+    setTimeout(() => {
+      window.location.replace("/perfil.html");
+    }, 500);
   }
 });
 

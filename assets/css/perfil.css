@@ -53,6 +53,10 @@ body {
   color: #fff;
 }
 
+.active_link {
+  color: #385ef3;
+}
+
 .nav_image {
   position: absolute;
   top: 0;
@@ -111,7 +115,7 @@ body {
 }
 
 .body_content {
-  width: 50%;
+  width: 60%;
   height: 100%;
   padding: 2em 2em;
   background-color: #fff;
@@ -205,8 +209,8 @@ body {
 
 @media (max-width: 768px) {
   .nav {
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-areas: "nav_text nav_text nav_text nav_img nav_img";
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-areas: "nav_text nav_text nav_text nav_text nav_text nav_img nav_img";
   }
 
   .body_content {
@@ -238,7 +242,7 @@ body {
     flex-direction: column;
     margin-top: 5em;
     padding: 2em;
-    background-color: #474747;
+    background-color: black;
     animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
   }
 
@@ -306,7 +310,6 @@ body {
     grid-template-areas:
       "label"
       "input";
-
     gap: 10px;
     margin-bottom: 2em;
   }
