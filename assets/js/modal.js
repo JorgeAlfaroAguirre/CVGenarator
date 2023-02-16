@@ -6,6 +6,10 @@ const btn_close__login_modal = document.querySelector(".btn__close_login");
 const btn_close__register_modal = document.querySelector(
   ".btn__close_register"
 );
+
+if (window.location.pathname === "/index.html") {
+  window.history.pushState(null, null, "/login");
+}
 const main__background = document.querySelector(".main__background");
 const inputs = document.querySelectorAll(".input__login");
 const inputs__register = document.querySelectorAll(".input__register");

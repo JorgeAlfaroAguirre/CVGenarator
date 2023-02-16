@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV Generator</title>
+  <link rel="stylesheet" href="./assets/css/form_cv.css">
+</head>
+<body>
+  <div class="main">
+      <nav class="nav">
+        <div class="toggle-container">
+          <div class="toggle-burger"></div>
+          <div class="toggle-burger"></div>
+          <div class="toggle-burger"></div>
+        </div>
+        <div class="nav_text">
+          <div class="nav_perfil">
+            <a href="#" class="link_nav">Curriculum</a>
+          </div>
+          <div class="nav_perfil">
+            <a href="#" class="link_nav active_link">Mi perfil</a>
+          </div>
+        </div>
+        <div class="nav_image">
+          <div class="nav_container_sesion">
+            <div class="nav_close_sesion">
+              <a href="index.html" class="close">Cerrar sesion</a>
+            </div>
+          </div>
+          <img
+            src="./assets/img/perfil/no-image.png"
+            alt=""
+            class="img_perfil"
+          />
+        </div>
+      </nav>
+      <div class="main_container">
+        <div class="body_content">
+          <div class="informacion_cuenta">
+            <h2 class="title_perfil">Datos personales</h2>
+            <div class="form_account">
+              <form action="" class="form_information_account">
+                <div class="group_input">
+                  <label for="name_completed" class="label_account"
+                    >Nombres</label
+                  >
+                  <input
+                    id="name_completed"
+                    type="text"
+                    class="input_account input_save_account"
+                    name="name_completed"
+                    placeholder="Jhon Andrew"
+                    pattern="[a-zA-Z]+"
+                  />
+                </div>
+                <div class="group_input">
+                  <label for="lastName_completed" class="label_account"
+                    >Apellidos</label
+                  >
+                  <input
+                    id="lastName_completed"
+                    type="text"
+                    class="input_account input_save_account"
+                    name="lastName_completed"
+                    placeholder="Perez Rodriguez"
+                    pattern="[a-zA-Z]+"
+                  />
+                </div>
+                <div class="group_input">
+                  <label for="re_password_completed" class="label_account"
+                    >DNI</label
+                  >
+                  <input
+                    id="re_password_completed"
+                    type="text"
+                    class="input_account input_save_account"
+                    name="re_password"
+                    placeholder="**********"
+                  />
+                </div>
+              </form>
+              <div class="group_button">
+                <a href="#" class="btn_perfil_save">Guardar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/js/form_cv.js"></script>
+</body>
+</html>

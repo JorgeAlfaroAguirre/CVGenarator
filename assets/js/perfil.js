@@ -3,6 +3,10 @@ const toggleBurger = document.querySelectorAll(".toggle-burger");
 const navText = document.querySelector(".nav_text");
 const btnSave = document.querySelector(".btn_perfil_save");
 
+if (window.location.pathname === "/perfil.html") {
+   window.history.pushState(null, null, "/perfil");
+}
+
 const showToast = (message) => {
   // Create the toast container
   const toastContainer = document.createElement("div");
