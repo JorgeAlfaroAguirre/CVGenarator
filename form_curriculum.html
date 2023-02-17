@@ -39,47 +39,144 @@
       <div class="main_container">
         <div class="body_content">
           <div class="informacion_cuenta">
-            <h2 class="title_perfil">Datos personales</h2>
             <div class="form_account">
               <form action="" class="form_information_account">
-                <div class="group_input">
-                  <label for="name_completed" class="label_account"
-                    >Nombres</label
-                  >
-                  <input
-                    id="name_completed"
-                    type="text"
-                    class="input_account input_save_account"
-                    name="name_completed"
-                    placeholder="Jhon Andrew"
-                    pattern="[a-zA-Z]+"
-                  />
-                </div>
-                <div class="group_input">
-                  <label for="lastName_completed" class="label_account"
-                    >Apellidos</label
-                  >
-                  <input
-                    id="lastName_completed"
-                    type="text"
-                    class="input_account input_save_account"
-                    name="lastName_completed"
-                    placeholder="Perez Rodriguez"
-                    pattern="[a-zA-Z]+"
-                  />
-                </div>
-                <div class="group_input">
-                  <label for="re_password_completed" class="label_account"
-                    >DNI</label
-                  >
-                  <input
-                    id="re_password_completed"
-                    type="text"
-                    class="input_account input_save_account"
-                    name="re_password"
-                    placeholder="**********"
-                  />
-                </div>
+                <section class="section_form">             
+                  <!------------------------------------------->
+                  <!------------  Datos personales  ----------->
+                  <!------------------------------------------->
+                  <h2 class="title_perfil">Datos personales</h2>
+                  <div class="group_input">
+                    <label for="name_completed" class="label_account"
+                      >Nombres</label
+                    >
+                    <input
+                      id="name_completed"
+                      type="text"
+                      class="input_account input_save_account"
+                      name="name_completed"
+                      placeholder="Jhon Andrew"
+                      pattern="[a-zA-Z]+\"
+                    />
+                  </div>
+                  <div class="group_input">
+                    <label for="lastName_completed" class="label_account"
+                      >Apellidos</label
+                    >
+                    <input
+                      id="lastName_completed"
+                      type="text"
+                      class="input_account input_save_account"
+                      name="lastName_completed"
+                      placeholder="Perez Rodriguez"
+                      pattern="[a-zA-Z]+\"
+                    />
+                  </div>
+                  <div class="group_input">
+                    <label for="re_password_completed" class="label_account"
+                      >DNI</label
+                    >
+                    <input
+                      id="re_password_completed"
+                      type="text"
+                      class="input_account input_save_account"
+                      name="re_password"
+                      placeholder="xxxxxxxx-x (sin puntos, con guión)"
+                      pattern="[0-9/\-]+"
+                    />
+                  </div>
+                </section>
+                <section class="section_form">
+                  <!-------------------------------------------->
+                  <!------------ Datos de ubicación ------------>
+                  <!-------------------------------------------->
+                  <h2 class="title_perfil">Datos de ubicación</h2>
+                  <div class="group_input">
+                    <label for="country_completed" class="label_account"
+                      >País</label
+                    >
+                    <input
+                      id="country_completed"
+                      type="text"
+                      class="input_account input_save_account"
+                      name="country_completed"
+                      placeholder="USA"
+                      pattern="[a-zA-Z0-9]+\"
+                    />
+                  </div>
+                  <div class="group_input">
+                    <label for="state_completed" class="label_account"
+                      >Región/Estado</label
+                    >
+                    <input
+                      id="state_completed"
+                      type="text"
+                      class="input_account input_save_account"
+                      name="state_completed"
+                      placeholder="Colorado"
+                      pattern="[a-zA-Z0-9]+\"
+                    />
+                  </div>
+                  <div class="group_input">
+                    <label for="city_completed" class="label_account"
+                      >Ciudad</label
+                    >
+                    <input
+                      id="city_completed"
+                      type="text"
+                      class="input_account input_save_account"
+                      name="city_completed"
+                      placeholder="Denver"
+                      pattern="[a-zA-Z0-9]+\"
+                    />
+                  </div>
+                  <div class="group_input">
+                    <label for="dir_completed" class="label_account"
+                      >Dirección</label
+                    >
+                    <input
+                      id="dir_completed"
+                      type="text"
+                      class="input_account input_save_account"
+                      name="dir_completed"
+                      placeholder="Broadway 1234"
+                      pattern="[a-zA-Z0-9]+\"
+                      
+                    />
+                  </div>
+                </section>
+                <section class="section_form">
+                  <!------------------------------------------->
+                  <!------------ Datos de contacto ------------>
+                  <!------------------------------------------->
+                  <h2 class="title_perfil">Datos de contactos</h2>
+                  <div class="group_input">
+                    <label for="phone_completed" class="label_account"
+                      >Fono</label
+                    >
+                    <input
+                      id="phone_completed"
+                      type="text"
+                      class="input_account input_save_account"
+                      name="phone_completed"
+                      placeholder="123456789"
+                      pattern="[0-9]+"
+                    />
+                  </div>
+                  <div class="group_input">
+                    <label for="email_completed" class="label_account"
+                      >Email</label
+                    >
+                    <input
+                      id="email_completed"
+                      type="email"
+                      class="input_account input_save_account"
+                      name="email_completed"
+                      placeholder="nombre@dominio.com"
+                      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                    />
+                  </div>
+                </section>
               </form>
               <div class="group_button">
                 <a href="#" class="btn_perfil_save">Guardar</a>

@@ -8,7 +8,7 @@
 body {
   font-family: "League Spartan", sans-serif;
   /* font-family: 'Poppins', sans-serif; */
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .main {
@@ -135,6 +135,10 @@ body {
   padding: 0 3em;
 }
 
+.section_form{
+  margin:.5em 0 4em;
+}
+
 .group_input {
   display: grid;
   grid-template-areas: "label input";
@@ -177,6 +181,7 @@ input:invalid{
   color:white;
   animation: shake .2s 2;
 }
+
 
 @keyframes shake {
   25%{
