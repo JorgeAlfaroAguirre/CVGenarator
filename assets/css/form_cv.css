@@ -177,9 +177,14 @@ body {
   padding: 1em 1.2em;
 }
 
+.input_account:focus{
+  border-color: #385ef3;
+}
+
 input:invalid{
   border-bottom: 0.2em solid red;
-  background-color: #ff6a6acc;
+  border-color:red;
+  background-color: #ff6a6aa2;
   color:white;
   animation: shake .2s 2;
 }
@@ -209,14 +214,11 @@ input:invalid{
   border-right: 0;
 }
 
-.input_acount:focus {
-  outline: none;
-  border: 0.2em solid rgba(55, 55, 255, 0.486);
-  background-color: rgba(102, 102, 228, 0.082);
-  border-top: 0;
-  border-left: 0;
-  border-right: 0;
+.textarea_account:focus{
+  border-color: #385ef3;
 }
+
+
 
 .group_button {
   display: flex;
