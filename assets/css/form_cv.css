@@ -13,6 +13,7 @@ body {
 
 .main {
   overflow: hidden;
+  height: auto;
   /* height: 100vh;
   display: grid; */
   margin: 0 auto;
@@ -108,6 +109,7 @@ body {
   max-width: 1440px;
   background-color: #fbfbfb;
   min-height: 100vh;
+  height: auto;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -116,7 +118,7 @@ body {
 
 .body_content {
   width: 60%;
-  height: 100%;
+  height: auto;
   padding: 2em 2em;
   background-color: #fff;
   font-size: 1.2em;
@@ -136,7 +138,7 @@ body {
 }
 
 .section_form{
-  margin:.5em 0 4em;
+  margin:.5em 0 3em;
 }
 
 .group_input {
@@ -165,7 +167,7 @@ body {
 
 .input_account {
   grid-area: input;
-  width: 25em;
+  width: max(200px, 25em);
   border-radius: 5px;
   border: 0.2em solid rgba(194, 194, 194, 0.829);
   border-top: 0;
@@ -193,6 +195,18 @@ input:invalid{
   75%{
     translate: 6px 0;
   }
+}
+
+.textarea_account{
+  display: block;
+  height: 20em;
+  width: 100%;
+  padding:1.2em;
+  border-radius: 5px;
+  outline: none;
+  border: 0.2em solid rgba(194, 194, 194, 0.829);
+  border-left: 0;
+  border-right: 0;
 }
 
 .input_acount:focus {

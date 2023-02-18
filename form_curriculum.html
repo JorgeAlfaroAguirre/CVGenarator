@@ -56,7 +56,7 @@
                       class="input_account input_save_account"
                       name="name_completed"
                       placeholder="Jhon Andrew"
-                      pattern="[a-zA-Z]+\"
+                      pattern="[a-zA-Z][a-zA-Z\s]*"
                     />
                   </div>
                   <div class="group_input">
@@ -69,7 +69,7 @@
                       class="input_account input_save_account"
                       name="lastName_completed"
                       placeholder="Perez Rodriguez"
-                      pattern="[a-zA-Z]+\"
+                      pattern="[a-zA-Z][a-zA-Z\s]*"
                     />
                   </div>
                   <div class="group_input">
@@ -101,7 +101,7 @@
                       class="input_account input_save_account"
                       name="country_completed"
                       placeholder="USA"
-                      pattern="[a-zA-Z0-9]+\"
+                      pattern="[a-zA-Z][a-zA-Z\s]*"
                     />
                   </div>
                   <div class="group_input">
@@ -114,7 +114,7 @@
                       class="input_account input_save_account"
                       name="state_completed"
                       placeholder="Colorado"
-                      pattern="[a-zA-Z0-9]+\"
+                      pattern="[a-zA-Z][a-zA-Z\s]*"
                     />
                   </div>
                   <div class="group_input">
@@ -127,7 +127,7 @@
                       class="input_account input_save_account"
                       name="city_completed"
                       placeholder="Denver"
-                      pattern="[a-zA-Z0-9]+\"
+                      pattern="[a-zA-Z][a-zA-Z\s]*"
                     />
                   </div>
                   <div class="group_input">
@@ -140,7 +140,7 @@
                       class="input_account input_save_account"
                       name="dir_completed"
                       placeholder="Broadway 1234"
-                      pattern="[a-zA-Z0-9]+\"
+                      pattern="[a-zA-Z0-9][a-zA-Z0-9\s]*"
                       
                     />
                   </div>
@@ -176,6 +176,21 @@
                       pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                     />
                   </div>
+                </section>
+                <section class="section_form">
+                  <!----------------------------------------------->
+                  <!------------ Datos de presentación ------------>
+                  <!----------------------------------------------->
+                  <h2 class="title_perfil">Cuentanos de tí</h2>
+                    
+                    <textarea
+                      id="about_you_completed"
+                      type="text"
+                      class="textarea_account input_save_account"
+                      name="about_you_completed"
+                      placeholder="Cuentanos aquí..."
+                    ></textarea>
+                    
                 </section>
               </form>
               <div class="group_button">
